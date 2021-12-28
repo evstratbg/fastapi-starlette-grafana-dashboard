@@ -23,7 +23,7 @@
   "gnetId": null,
   "graphTooltip": 1,
   "id": 28,
-  "iteration": 1640697488212,
+  "iteration": 1640698809177,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -364,7 +364,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "avg by (pod) (rate(process_cpu_seconds_total{namespace=\"$namespace\", service=\"partner-api\"}[$__interval_sx4])) * 100",
+          "expr": "avg by (pod) (rate(process_cpu_seconds_total{namespace=\"$namespace\", service=\"$service\"}[$__interval_sx4])) * 100",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -1603,7 +1603,7 @@
       {
         "allValue": null,
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "mytech-api",
           "value": "mytech-api"
         },
@@ -1630,12 +1630,12 @@
     ]
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-30m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "FastApi dashboard",
   "uid": "Zj4zOgA7z",
-  "version": 2
+  "version": 5
 }
